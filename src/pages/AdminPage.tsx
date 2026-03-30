@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from 'firebase/auth';
 import { collection, query, orderBy, onSnapshot, doc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { auth, db } from '@/lib/firebase';
-import { Button } from '@/components/ui-core/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui-core/card';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui-core/table';
-import { Badge } from '@/components/ui-core/badge';
+import { Button } from '@/components/ui-components/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui-components/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui-components/table';
+import { Badge } from '@/components/ui-components/badge';
 import { toast } from 'sonner';
 import { ShieldAlert, CheckCircle, XCircle, Copy } from 'lucide-react';
 
