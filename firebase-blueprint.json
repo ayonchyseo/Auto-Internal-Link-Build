@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "Transaction": {
+      "title": "Transaction",
+      "description": "A manual payment submission via bKash or Nagad.",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "method": { "type": "string", "enum": ["bkash", "nagad"] },
+        "trxId": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "method", "trxId", "status", "createdAt"]
+    },
+    "License": {
+      "title": "License",
+      "description": "A generated local license key.",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "status": { "type": "string", "enum": ["active", "revoked"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["key", "email", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "transactions/{transactionId}": {
+      "schema": { "$ref": "#/entities/Transaction" },
+      "description": "Manual payment submissions."
+    },
+    "licenses/{licenseId}": {
+      "schema": { "$ref": "#/entities/License" },
+      "description": "Generated local license keys."
+    }
+  }
+}

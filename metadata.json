@@ -1,0 +1,5 @@
+{
+  "name": "Auto Internal Linking Builder",
+  "description": "AI-powered internal linking strategy generator using Gemini 1.5 Flash. Analyze pages, detect orphans, and build semantic topic clusters.",
+  "requestFramePermissions": []
+}
