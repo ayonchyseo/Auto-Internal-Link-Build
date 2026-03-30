@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
-import { Button } from '@/components/ui-components/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui-components/card';
-import { Input } from '@/components/ui-components/input';
-import { Label } from '@/components/ui-components/label';
+import { Button } from '@/components/ui-core/Button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui-core/Card';
+import { Input } from '@/components/ui-core/Input';
+import { Label } from '@/components/ui-core/Label';
 import { toast } from 'sonner';
 import { KeyRound, ArrowLeft } from 'lucide-react';
 

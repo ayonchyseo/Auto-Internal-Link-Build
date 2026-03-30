@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
-import { Button } from '@/components/ui-components/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui-components/card';
-import { Input } from '@/components/ui-components/input';
-import { Label } from '@/components/ui-components/label';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui-components/tabs';
+import { Button } from '@/components/ui-core/Button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui-core/Card';
+import { Input } from '@/components/ui-core/Input';
+import { Label } from '@/components/ui-core/Label';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui-core/Tabs';
 import { toast } from 'sonner';
 import { CheckCircle2, Copy, ArrowRight, Lock } from 'lucide-react';
 
