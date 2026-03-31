@@ -26,7 +26,8 @@ export default function Admin() {
   }, []);
 
   useEffect(() => {
-    if (!user || user.email !== 'ayonchy@gmail.com') return;
+    const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || 'ayonchy@gmail.com';
+    if (!user || user.email !== adminEmail) return;
 
     const qTx = query(collection(db, 'transactions'), orderBy('createdAt', 'desc'));
     const unsubTx = onSnapshot(qTx, (snapshot) => {
@@ -108,7 +109,7 @@ export default function Admin() {
 
   if (isLoading) return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
 
-  if (!user || user.email !== 'ayonchy@gmail.com') {
+  if (!user || user.email !== (import.meta.env.VITE_ADMIN_EMAIL || 'ayonchy@gmail.com')) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <Card className="w-full max-w-md shadow-xl border-slate-200">
@@ -117,7 +118,7 @@ export default function Admin() {
             <CardTitle className="text-2xl">Admin Access Only</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
-            <p className="text-center text-slate-500">You must be logged in as ayonchy@gmail.com to access this page.</p>
+            <p className="text-center text-slate-500">You must be logged in with an authorized admin account to access this page.</p>
             <Button onClick={handleLogin} className="w-full">Login with Google</Button>
             <Button variant="ghost" onClick={() => navigate('/')}>Back to Home</Button>
           </CardContent>
