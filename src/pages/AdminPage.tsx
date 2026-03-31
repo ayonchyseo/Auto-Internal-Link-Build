@@ -117,7 +117,9 @@ export default function Admin() {
             <CardTitle className="text-2xl">Admin Access Only</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
-            <p className="text-center text-slate-500">You must be logged in as ayonchy@gmail.com to access this page.</p>
+            <p className="text-center text-slate-500">
+              You must be logged in as ayonchy@<span className="blur-[4px] select-none bg-slate-200/50 px-1 rounded">gmail.com</span> to access this page.
+            </p>
             <Button onClick={handleLogin} className="w-full">Login with Google</Button>
             <Button variant="ghost" onClick={() => navigate('/')}>Back to Home</Button>
           </CardContent>

@@ -100,7 +100,7 @@ export default function Landing() {
                 <div className="text-center py-6 space-y-4">
                   <div className="text-4xl font-bold">$10<span className="text-lg text-slate-500 font-normal">/lifetime</span></div>
                   <p className="text-sm text-slate-500">Pay securely via Gumroad. You will receive your license key instantly via email.</p>
-                  <Button className="w-full" size="lg" onClick={() => window.open('https://gumroad.com', '_blank')}>
+                  <Button className="w-full" size="lg" onClick={() => window.open('https://ayonchy.gumroad.com/l/autointernallinkbuilder', '_blank')}>
                     Buy with Gumroad <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </div>
@@ -114,8 +114,8 @@ export default function Landing() {
                 <div className="bg-slate-50 p-4 rounded-lg border space-y-3 text-sm">
                   <p className="font-medium text-slate-900">1. Send Money (Personal)</p>
                   <div className="flex items-center justify-between bg-white p-2 rounded border">
-                    <span className="font-mono">01700000000</span>
-                    <Button variant="ghost" size="sm" onClick={() => handleCopy('01700000000')}><Copy className="w-4 h-4" /></Button>
+                    <span className="font-mono">01677679416</span>
+                    <Button variant="ghost" size="sm" onClick={() => handleCopy('01677679416')}><Copy className="w-4 h-4" /></Button>
                   </div>
                   <div className="flex gap-2 pt-2">
                     <Button 
