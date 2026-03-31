@@ -63,13 +63,13 @@ export default function Landing() {
             v1.0 is live
           </div>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
-            The Ultimate AI Tool for Creators.
+            Auto Internal Link Builder
           </h1>
           <p className="text-lg text-slate-600">
-            Bring your own API key and pay a one-time fee for lifetime access to the UI. No subscriptions, no hidden fees.
+            The smartest way to automate your internal linking strategy. Boost your SEO, improve site structure, and save hours of manual work with AI-powered link suggestions.
           </p>
           <ul className="space-y-3 text-slate-600">
-            {['Bring Your Own Key (BYOK)', 'No monthly subscriptions', 'Lifetime updates included', 'Secure local storage'].map((feature) => (
+            {['AI-Powered Smart Suggestions', 'Automated Bulk Linking', 'SEO Authority Booster', 'Lifetime Access - No Subscriptions'].map((feature) => (
               <li key={feature} className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-500" />
                 <span>{feature}</span>
@@ -86,8 +86,8 @@ export default function Landing() {
 
         <Card className="w-full shadow-xl border-slate-200">
           <CardHeader>
-            <CardTitle>Get Lifetime Access</CardTitle>
-            <CardDescription>Choose your preferred payment method</CardDescription>
+            <CardTitle>Unlock Auto Link Builder</CardTitle>
+            <CardDescription>Get lifetime access to the most powerful SEO tool</CardDescription>
           </CardHeader>
           <CardContent>
             <Tabs defaultValue="international" className="w-full">
@@ -171,7 +171,7 @@ export default function Landing() {
       </motion.div>
       
       <footer className="mt-12 text-slate-400 text-xs flex gap-4">
-        <span>&copy; 2026 AI Creator Tool</span>
+        <span>&copy; 2026 Auto Internal Link Builder</span>
         <button 
           onClick={() => navigate('/admin')}
           className="hover:text-slate-600 transition-colors underline underline-offset-2"
